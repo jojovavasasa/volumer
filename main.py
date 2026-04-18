@@ -25,6 +25,7 @@ elif shape == "e":
     height = float(input(f"Wat is de hoogte in {unit}? "))
     volume = (1/3) * math.pi * (radius * radius) * height
 
+print()
 print(f"{volume} {unit}³")
 print(f"{round(volume)} {unit}³ afgerond")
 time.sleep(5)
