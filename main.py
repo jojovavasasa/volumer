@@ -20,7 +20,7 @@ elif shape == "c":
 elif shape == "d":
     radius = float(input(f"Wat is de straal in {unit}? "))
     volume = (4/3) * math.pi * (radius * radius * radius)
-elif shape == "d":
+elif shape == "e":
     radius = float(input(f"Wat is de straal in {unit}? "))
     height = float(input(f"Wat is de hoogte in {unit}? "))
     volume = (1/3) * math.pi * (radius * radius) * height
