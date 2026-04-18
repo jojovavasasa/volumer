@@ -1,5 +1,5 @@
 import math
-import sleep
+import time
 
 unit = input("Welke eenheid ga je gebruiken? ")
 shape = input("Welke vorm wil je berekenen?\n(A): Piramide\n(B): Balk\n(C): Kubus\n(D): Bol\n")
@@ -22,4 +22,4 @@ elif shape == "d":
     volume = (4/3) * math.pi * (radius * radius * radius)
 print(f"{volume} {unit}³")
 print(f"{round(volume)} {unit}³ afgerond")
-sleep.wait(5)
+time.sleep(5)
