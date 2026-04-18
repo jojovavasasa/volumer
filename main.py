@@ -1,8 +1,22 @@
-unit = input("welke eenheid ga je gebruiken? ")
+import math
 
-length = float(input(f"wat is de lengte in {unit}? "))
-breadth = float(input(f"wat is de breedte in {unit}? "))
-height = float(input(f"wat is de hoogte in {unit}? "))
-
-volume = (length * breadth * height) / 3
+unit = input("Welke eenheid ga je gebruiken? ")
+shape = input("Welke vorm wil je berekenen?\n(A): Piramide\n(B): Balk\n(C): Kubus\n(D): Bol\n")
+shape = shape.lower()
+if shape == "a":
+    length = float(input(f"Wat is de lengte in {unit}? "))
+    width = float(input(f"Wat is de breedte in {unit}? "))
+    height = float(input(f"Wat is de hoogte in {unit}? "))
+    volume = (length * width * height) / 3
+elif shape == "b":
+    length = float(input(f"Wat is de lengte in {unit}? "))
+    width = float(input(f"Wat is de breedte in {unit}? "))
+    height = float(input(f"Wat is de hoogte in {unit}? "))
+    volume = length * width * height
+elif shape == "c":
+    length = float(input(f"Wat is de lengte in {unit}? "))
+    volume = length * length * length
+elif shape == "d":
+    radius = float(input(f"Wat is de radius in {unit}? "))
+    volume = (4/3) * math.pi * (radius * radius * radius)
 print(f"{volume} {unit}³")
